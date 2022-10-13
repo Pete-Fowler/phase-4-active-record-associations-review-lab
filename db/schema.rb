@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2021_05_06_153127) do
   end
 
   create_table "rides", force: :cascade do |t|
+    t.integer "taxi_id"
+    t.integer "passenger_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
